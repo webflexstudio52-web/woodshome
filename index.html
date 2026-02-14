@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <link rel="icon" type="image/x-icon" href="image/fivicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">ShopEase</a>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Home</a>
+                <a href="#products">Products</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="nav-icons">
+                <a href="#account" class="nav-icon"><i class="far fa-user"></i></a>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content animate-on-scroll fade-in-up">
+                <h1>Handcrafted Wooden Masterpieces</h1>
+                <p class="hero-subtitle">Discover the beauty of natural wood in every piece</p>
+                <div class="hero-buttons">
+                    <a href="#shop-now" class="btn btn-primary">Shop Now</a>
+                    <a href="#collections" class="btn btn-secondary">View Collections</a>
+                </div>
+            </div>
+            <div class="hero-image animate-on-scroll fade-in-right delay-1">
+                <div class="wood-texture"></div>
+                <img src="image/hero.png" alt="Handcrafted Wooden Table" class="floating">
+            </div>
+        </div>
+        <div class="wood-grain-overlay"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-item animate-on-scroll fade-in-up delay-1">
+            <div class="feature-icon">
+                <i class="fas fa-tree"></i>
+            </div>
+            <h3>Sustainable Materials</h3>
+            <p>Ethically sourced from responsibly managed forests</p>
+        </div>
+        <div class="feature-item animate-on-scroll fade-in-up delay-1">
+            <div class="feature-icon">
+                <i class="fas fa-hammer"></i>
+            </div>
+            <h3>Handcrafted</h3>
+            <p>Each piece is carefully made by skilled artisans</p>
+        </div>
+        <div class="feature-item animate-on-scroll fade-in-up delay-1">
+            <div class="feature-icon">
+                <i class="fas fa-truck"></i>
+            </div>
+            <h3>Free Shipping</h3>
+            <p>On all orders over $100</p>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-on-scroll fade-in-up">Handcrafted Wooden Creations</h2>
+                <p>Discover our premium collection of handcrafted wooden products</p>
+                <div class="wood-divider">
+                    <span></span>
+                    <i class="fas fa-tree"></i>
+                    <span></span>
+                </div>
+            </div>
+            
+            <div class="product-filters animate-on-scroll fade-in-up delay-1">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="furniture">Furniture</button>
+                <button class="filter-btn" data-filter="decor">Home Decor</button>
+                <button class="filter-btn" data-filter="kitchen">Kitchenware</button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card animate-on-scroll fade-in-up delay-2" data-category="furniture">
+                  
+                    <div class="product-image">
+                        <img src="image/bad.jpg" alt="Wooden Chair">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="1">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Furniture</div>
+                        <h3 class="product-title">Rustic Wooden Chair</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(24)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$149.99</span>
+                            <span class="original-price">$199.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card animate-on-scroll fade-in-up delay-2" data-category="decor">
+                   
+                    <div class="product-image">
+                        <img src="image/decore.jpg" alt="Wooden Shelf">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="2">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Home Decor</div>
+                        <h3 class="product-title">Floating Wood Shelf</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="rating-count">(18)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$89.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card animate-on-scroll fade-in-up delay-2" data-category="kitchen">
+                   
+                    <div class="product-image">
+                        <img src="image/kitchen.jpg" alt="Wooden Cutting Board">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="3">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Kitchenware</div>
+                        <h3 class="product-title">Bamboo Cutting Board</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(42)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$34.99</span>
+                            <span class="original-price">$49.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card animate-on-scroll fade-in-up delay-2" data-category="furniture">
+                    <div class="product-image">
+                        <img src="image/chair.jpg" alt="Coffee Table">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="4">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Furniture</div>
+                        <h3 class="product-title">Live Edge Coffee Table</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="rating-count">(15)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$299.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="view-all-container">
+                <a href="#all-products" class="view-all-btn">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Left Side - Photo -->
+                <div class="about-photo animate-on-scroll fade-in-left">
+                    <div class="photo-frame">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Our Workshop" class="main-photo">
+                        <div class="experience-badge animate-on-scroll scale-in delay-1">
+                            <span class="years">25+</span>
+                            <span class="text">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Side - Summary -->
+                <div class="about-summary animate-on-scroll fade-in-right">
+                    <span class="section-subtitle">Our Story</span>
+                    <h2 class="section-title">Crafting Timeless Wooden Masterpieces</h2>
+                    <div class="wood-divider">
+                        <span></span>
+                        <i class="fas fa-tree"></i>
+                        <span></span>
+                    </div>
+                    
+                    <p class="summary-text">
+                        Since 1995, WoodCrafters has been at the forefront of fine woodworking, blending traditional techniques with modern design. Our passion for wood shines through in every piece we create, from custom furniture to handcrafted home accents.
+                    </p>
+                    
+                    <ul class="features-list">
+                        <li class="animate-on-scroll fade-in-up delay-1">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Handcrafted with premium, sustainable wood</span>
+                        </li>
+                        <li class="animate-on-scroll fade-in-up delay-2">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Custom designs tailored to your space</span>
+                        </li>
+                        <li class="animate-on-scroll fade-in-up delay-3">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Eco-friendly finishes and materials</span>
+                        </li>
+                        <li class="animate-on-scroll fade-in-up delay-4">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Lifetime craftsmanship guarantee</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="about-cta animate-on-scroll fade-in-up delay-5">
+                        <a href="#contact" class="btn btn-primary">Get Custom Quote</a>
+                        <a href="#gallery" class="btn btn-outline">View Our Work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wood-grain-overlay light"></div>
+    </section>
+
+    <!-- Quick View Modal -->
+    <div class="quick-view-modal" id="quickViewModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-body">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-subtitle">What Our Clients Say</span>
+                <h2 class="section-title">Customer Testimonials</h2>
+                <div class="wood-divider"></div>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial Card 1 -->
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">The quality of the woodwork is exceptional! Our custom dining table has become the centerpiece of our home. The craftsmanship is truly remarkable.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Homeowner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="testimonial-card animate-on-scroll" style="--delay: 0.2s">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">Working with this team was a pleasure. They brought my vision to life with their custom wood furniture. The attention to detail is impressive!</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <span>Interior Designer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="testimonial-card animate-on-scroll" style="--delay: 0.4s">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">The wooden furniture we ordered for our office has received countless compliments. The team was professional and delivered on time. Highly recommended!</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Rodriguez" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Emily Rodriguez</h4>
+                            <span>Office Manager</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Contact Section -->
+    <section class="contact-section animate-on-scroll" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get in Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <div class="wood-divider">
+                    <span></span>
+                    <i class="fas fa-tree"></i>
+                    <span></span>
+                </div>
+                <p>Have questions about our wood products? We'd love to hear from you!</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info animate-on-scroll fade-in-left">
+                    <div class="info-box">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Our Location</h3>
+                            <p>123 Woodland Avenue, Forest City, FC 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-box">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Phone Number</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-box">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email Address</h3>
+                            <p>info@woodcrafts.com</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="contact-form animate-on-scroll fade-in-right">
+                    <form id="contactForm" action="process_contact.php" method="POST">
+                        <div id="formMessage" class="form-message"></div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-control" required>
+                            <label for="name">Your Name</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-control" required>
+                            <label for="email">Your Email</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                            <label for="phone">Phone Number (Optional)</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                            <label for="subject">Subject</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <div class="form-group textarea-group">
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>WoodCraft</h3>
+                <p>Handcrafted wooden furniture and decor for your dream space.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Woodland Ave, Forest City</p>
+                <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@woodcraft.com</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 WoodCraft. All Rights Reserved.</p>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</footer>
+
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="products.js"></script>
+    <script src="animations.js"></script>
+</body>
+</html>
